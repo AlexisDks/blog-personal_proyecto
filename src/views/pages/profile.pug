@@ -1,0 +1,19 @@
+extends ../layout/layout
+
+block content
+
+    main
+        section.profile
+            .profile-img
+                img(src="./assets/img/profile-pic.jpg", alt="Perfil")
+            .profile-info
+                h2 Hola, mi nombre es Miller Espinoza!
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur iure cupiditate perspiciatis tenetur recusandae minima voluptatem? Ab blanditiis modi ducimus illo quos id maiores voluptates culpa. Possimus suscipit error id distinctio quae minus facilis nam iste tempore expedita amet, consequatur earum?
+        section.proyects-container
+            h3 Proyectos
+            each i in [1, 2, 3]
+                .proyect
+                    h4 Título del Proyecto
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem magnam incidunt ratione beatae. Vero vel autem maiores sint eligendi, asperiores totam nesciunt, doloribus odio, amet corrupti facilis quos et voluptas?
+
+    include ../partials/contact

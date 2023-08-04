@@ -1,0 +1,9 @@
+section.secction-contact
+    each i, j in subtitle
+        -const imagenName = contact[j]
+
+        .contact
+            img(src=`./assets/img/${imagenName}`, alt="Contacto")
+            .contact-info
+                a(href="#")= i
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit.

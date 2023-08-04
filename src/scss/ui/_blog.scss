@@ -1,0 +1,48 @@
+.main-blog {
+    padding: 0 80px 40px;
+
+    &__content img{
+        display: inline-block;
+        padding: 0 50px 40px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 20px;
+
+        &__content img{ 
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        padding: 10px;
+
+        &__content img {
+            padding: 0;
+        }
+    }
+        
+}
+
+.blog-content__article {
+    padding: 0 80px 40px;
+
+    h4 {
+        border-bottom: 1px solid #cdd2da;
+        padding: 20px 0;
+    }
+
+    h1 {
+        margin: 20px 0;
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 0;
+    }
+
+    @media screen and (max-width: 500px){
+        padding: 0;
+    }
+}

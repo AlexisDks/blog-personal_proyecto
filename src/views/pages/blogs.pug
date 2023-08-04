@@ -1,0 +1,22 @@
+extends ../layout/layout
+
+block content
+    main.blogs-main
+        section.news
+            .news-content
+                h3 Noticia
+                img(src="./assets/img/pc-img.jpg", alt="Blog")
+                .news-info
+                    h2 Título del Blogspost
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium enim facere et accusamus quas esse repellat laborum quae, mollitia repellendus harum repudiandae voluptatem at. Modi, nostrum quidem.
+                    a.blogs-btn(href="blog.html") Leer más
+
+        section.posts
+            h3 Últimos Blogspost
+            for i in post.concat(post)
+                .posts-blog
+                    img(src=`./assets/img/${i}`, alt="")
+                    h4 Título del Blogspost
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, id fugit enim rerum amet cum esse ad quia velit soluta distinctio nisi corrupti, dolores totam aliquam asperiores deserunt alias.
+                    a.blogs-btn(href="blog.html") Leer más
+                    

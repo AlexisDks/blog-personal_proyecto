@@ -1,0 +1,59 @@
+.secction-contact {
+    width: 100%;
+    background-color: #e6e9ed;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px 50px;
+
+    @media screen and (max-width: 800px){
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 500px){
+        padding: 10px;
+        display: grid;
+        justify-content: center;
+    }
+}
+
+.contact {
+    display: flex;
+    margin: 20px 0 20px 20px;
+
+    img {
+        width: 100px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    &-info {
+        padding: 20px 0;
+        width: 300px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        display: grid;
+        margin: 0px;
+    }
+
+    @media screen and (max-width: 500px){
+        display: grid;
+        margin: 0px;
+        justify-items: center;
+
+        &-info{
+            text-align: center;
+        }
+    }
+}

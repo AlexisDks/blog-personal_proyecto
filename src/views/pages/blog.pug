@@ -1,0 +1,24 @@
+extends ../layout/layout
+
+block content
+    main.main-blog
+        .main-blog__content
+            img(src="./assets/img/pc-img.jpg", alt="Blog")
+
+            article.blog-content__article
+                h4 Noticia
+                h1 Título de Blogpost
+
+                p
+                    for i in [1, 2, 3, 4]
+                        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat ex eaque. Debitis dignissimos, optio, amet hic iure voluptatum vitae repellendus, tempora recusandae asperiores magni? Deleniti veniam perferendis repellendus at?
+
+                br
+
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat ex eaque. Debitis dignissimos, optio, amet hic iure voluptatum vitae repellendus, tempora recusandae asperiores magni? Deleniti veniam perferendis repellendus at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vel autem eum, dolorem eius corrupti, voluptas quidem facilis quo tempore et nihil asperiores, tempora soluta odit.
+
+                br
+
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat ex eaque. Debitis dignissimos, optio, amet hic iure voluptatum vitae repellendus, tempora recusandae asperiores magni? Deleniti veniam perferendis repellendus at?
+    
+    include ../partials/contact

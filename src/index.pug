@@ -1,0 +1,10 @@
+extends ./views/layout/layout
+block append config
+    -isIndexPage = true;
+
+block content
+    main.home-main
+        .main-container
+            p.main-container__text Conoce las novedades y noticias del Mundo Tecnológico
+
+            a.main-container__link(href="blogs.html") Entra ya!

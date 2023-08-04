@@ -1,0 +1,12 @@
+header.header
+    .social
+        .social-icons
+            each social in socials
+                a(href="")
+                    i(class= `fab fa-${social}`)
+    nav.nav
+        .nav-logo
+            a(href="index.html")
+                img(src="./assets/img/logo.png", alt="Logo")
+        .nav-link
+            a(href="profile.html") Sobre mí
