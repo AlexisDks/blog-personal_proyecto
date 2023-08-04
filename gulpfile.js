@@ -4,7 +4,7 @@ const gulp = require("gulp"),
   server = require("browser-sync").create();
 
 const SRC_PATH = "src/";
-const DEST_PATH = "build/";
+const DEST_PATH = "docs/";
 
 gulp.task("pug", () => {
   return gulp
